@@ -4,6 +4,9 @@ let userDictionary = {
   age: 30,
   isConnected: true,
   keyToPrint: "une clé",
+  sayHi: function() {
+    console.log("Hi !")
+  }
 }
 
 console.log(userDictionary.name) // clé name de l'objet userDictionary
@@ -14,3 +17,5 @@ console.log(userDictionary["isConnected"]) // clé "isConnected" de l'objet user
 
 let keyToPrint = "isConnected"
 console.log(userDictionary[keyToPrint]) // variable keyToPrint permettant d'accéder à la clé "isConnected" de l'objet userDictionary
+
+userDictionary.sayHi()

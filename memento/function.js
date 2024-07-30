@@ -25,3 +25,21 @@ const three = addOne(2)
 // f(x) = 3 * x + 2
 // f(3) = 3 * 3 + 2
 // f(3) = 11
+
+function sayHiWithLabel() {
+  console.log("Hi !");
+}
+
+sayHiWithLabel()
+
+const sayHiWithVariable = function() {
+  console.log("Hi !");
+}
+
+sayHiWithVariable()
+
+const sayHiWithArrow = () => {
+  console.log("Hi !");
+}
+
+sayHiWithArrow()
