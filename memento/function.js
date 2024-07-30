@@ -4,17 +4,6 @@ function doSomething() {
 
 doSomething()
 
-function cutVegetable(vegetable) {
-  const slicedVegetable = vegetable.split("")
-  return slicedVegetable
-}
-
-const slicedCarrot = cutVegetable("carrot")
-console.log(slicedCarrot)
-
-const slicedEggplant = cutVegetable("eggplant")
-console.log(slicedEggplant)
-
 function addOne (numberToIncrement) {
   return numberToIncrement + 1
 }
@@ -43,3 +32,16 @@ const sayHiWithArrow = () => {
 }
 
 sayHiWithArrow()
+
+// "." = le dossier de mon fichier actuel
+// "vegetable.js" = le fichier présent dans le dossier actuel à importer
+
+// on récupère le dictionnaire des exports dans la variable "vegetable"
+// le dictionnaire des exports contient la clé cutVegetable, donc "vegetable" contient la même chose.
+const vegetable = require('./vegetable.js');
+
+const slicedCarrot = vegetable.cutVegetable("carrot")
+console.log(slicedCarrot)
+
+const slicedEggplant = vegetable.cutVegetable("eggplant")
+console.log(slicedEggplant)
