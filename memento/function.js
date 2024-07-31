@@ -38,10 +38,15 @@ sayHiWithArrow()
 
 // on récupère le dictionnaire des exports dans la variable "vegetable"
 // le dictionnaire des exports contient la clé cutVegetable, donc "vegetable" contient la même chose.
-const vegetable = require('./vegetable.js');
+const vegetable = require('./vegetable.js')
 
 const slicedCarrot = vegetable.cutVegetable("carrot")
 console.log(slicedCarrot)
 
-const slicedEggplant = vegetable.cutVegetable("eggplant")
+const { cutVegetable } = require('./vegetable.js')
+// équivalent à
+// const vegetable = require('./vegetable.js')
+// const cutVegetable = vegetable.cutVegetable
+
+const slicedEggplant = cutVegetable("eggplant")
 console.log(slicedEggplant)
