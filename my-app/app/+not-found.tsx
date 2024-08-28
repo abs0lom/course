@@ -1,6 +1,3 @@
 export default function NotFoundScreen() {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
