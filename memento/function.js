@@ -8,7 +8,7 @@ function addOne (numberToIncrement) {
   return numberToIncrement + 1
 }
 
-const two = addOne(1)
+const two = addOne(1) // two = numberToIncrement + 1
 const three = addOne(2)
 
 // f(x) = 3 * x + 2
