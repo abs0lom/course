@@ -44,3 +44,11 @@ if (maCondition) {
 
 // ternaire : un si…sinon qui assigne une valeur à une variable
 const constanteToAssign = age >= 18 ? "toto" : "tata";
+
+if (maCondition) {
+  // …
+} else if (maCondition2) {
+
+} else {
+  
+}

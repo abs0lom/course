@@ -20,7 +20,7 @@ function Game() {
     } else {
       setClue("C'est moins !");
     }
-  }, [numberToTest, numberToFind]);
+  }, [numberToFind, numberToTest]);
 
   return (
     <View style={styles.drawer}>
